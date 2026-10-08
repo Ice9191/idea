@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+    Maven坐标：就是资源（jar）的唯一标识，通过该坐标可以唯一定位资源位置，使用坐标来定义项目或引入项目中需要的依赖
+    Maven坐标的主要组成：groupId、artifactId、version
+    -->
+    <!--groupId：定义当前Maven项目隶属组织名称（通常是域名反写，例如：com.baidu）-->
+    <groupId>com.hxb</groupId>
+    <!--artifactId：定义当前Maven项目名称（通常是模块名称，例如：order-service、goods-service）-->
+    <artifactId>project</artifactId>
+    <!--
+        version：定义当前项目版本号
+        1.0-SNAPSHOT：功能不稳定、尚处于开发中的版本，即快照版本
+        1.0.0-RELEASE：功能趋于稳定、当前更新停止，可以用于发行的版本
+    -->
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <!--依赖配置-->
+    <!--
+        依赖：指当前项目运行所需要的jar包，一个项目中可以引入多个依赖
+        配置：
+            1. 在pom.xml文件中编写<dependencies>标签
+            2. 在<dependencies>标签中使用<dependency>引入坐标
+            3. 定义坐标的groupId、artifactId、version
+            4. 点击刷新按钮，引入最新加入的依赖
+    -->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>7.0.8</version>
+
+            <!--排除依赖：指主动断开依赖的资源，被排除的资源无需指定版本，可以在Dependencies中查看是否排除成功-->
+            <exclusions>
+                <exclusion>
+                    <groupId>io.micrometer</groupId>
+                    <artifactId>micrometer-observation</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!--在pom.xml文件中引入JUnit依赖-->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.14.4</version>
+            <!--scope：定义依赖的作用范围，值为test表示仅在测试程序范围内有效-->
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.22.0</version>
+        </dependency>
+    </dependencies>
+
+</project>

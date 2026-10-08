@@ -1,0 +1,60 @@
+package com.FileNIO.Demo08;
+
+public class B {
+    /**
+     * 文件字节输入流：一次读取完全部字节
+     *  方式一：自己定义一个字节数组与被读取的文件大小一样大，然后使用该字节数组，一次读完文件的全部字节
+     */
+
+    public static void main(String[] args) {
+
+
+    }
+
+
+}
+package com.FileNIO.Demo08;
+
+public class B {
+    /**
+     * 文件字节输入流：一次读取完全部字节
+     *  方式一：自己定义一个字节数组与被读取的文件大小一样大，然后使用该字节数组，一次读完文件的全部字节
+     */
+
+    public static void main(String[] args) {
+
+
+    }
+
+
+}
+package com.FileNIO.Demo08;
+
+public class B {
+    /**
+     * 文件字节输入流：一次读取完全部字节
+     *  方式一：自己定义一个字节数组与被读取的文件大小一样大，然后使用该字节数组，一次读完文件的全部字节
+     */
+
+    public static void main(String[] args) {
+
+
+    }
+
+
+}
+package com.FileNIO.Demo08;
+
+public class B {
+    /**
+     * 文件字节输入流：一次读取完全部字节
+     *  方式一：自己定义一个字节数组与被读取的文件大小一样大，然后使用该字节数组，一次读完文件的全部字节
+     */
+
+    public static void main(String[] args) {
+
+
+    }
+
+
+}
