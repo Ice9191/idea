@@ -1,0 +1,36 @@
+package com.collection.demo19;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class Test {
+    /**
+     * Collections
+     *  java.util.Collections：是集合工具类
+     *  作用：Collections不是集合，而是集合的工具类
+     *  Collections常用的API：
+     *      public static <T> boolean addAll(Collection<T> c, T... elements)：批量添加元素
+     *      public static void shuffle(List<?> list)：打乱List集合元素的顺序
+     *      public static <T> void sort(List<T> list)：排序
+     *      public static <T> void sort(List<T> list, Comparator<T> c)：根据指定的规则进行排序
+     *      public static <T> int binarySearch(List<T> list, T key)：以二分查找法查找元素
+     *      public static <T> void copy(List<T> dest, List<T> src)：拷贝集合中的元素
+     *      public static <T> int fill(List<T> list, T obj)：使用指定的元素填充集合
+     *      public static <T> void max/min(Collection<T> coll)：根据默认的自然排序获取最大值/最小值
+     *      public static <T> void swap(List<?> list, int i, int j)：交换集合中指定位置的元素
+     */
+    public static void main(String[] args) {
+        // 创建集合对象
+        ArrayList<String> list = new ArrayList<>();
+
+        // 批量添加元素
+        Collections.addAll(list, "abc", "123", "456", "def");
+
+        // 打印集合
+        System.out.println(list);
+
+        // 打乱集合元素的排序
+        Collections.shuffle(list);
+        System.out.println(list);
+    }
+}
